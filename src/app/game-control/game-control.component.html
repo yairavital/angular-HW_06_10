@@ -1,0 +1,19 @@
+<button (click)="onClick()">Random</button>
+<ul [ngStyle]="{ 'background-color': 'green', color: 'white' }" >
+  The odd numbers:
+  <li
+    [ngStyle]="{ 'background-color': 'green', color: 'white' }"
+    *ngFor="let item of oddNumbers"
+  >
+    {{ item }}
+  </li>
+</ul>
+<ul [ngStyle]="{ 'background-color': 'blue', color: 'white' }">
+  The even numbers:
+  <li
+    [ngStyle]="{ 'background-color': 'blue', color: 'white' }"
+    *ngFor="let item of evenNumbers"
+  >
+    {{ item }}
+  </li>
+</ul>
